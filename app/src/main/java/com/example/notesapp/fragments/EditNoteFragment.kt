@@ -38,7 +38,7 @@ class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-       editnoteBinding = FragmentEditNoteBinding.inflate(inflater,container,false)
+        editnoteBinding = FragmentEditNoteBinding.inflate(inflater,container,false)
         return binding.root
     }
 
@@ -62,19 +62,19 @@ class EditNoteFragment : Fragment(R.layout.fragment_edit_note), MenuProvider {
                 val note = Note(currentNote.id,title,content)
                 notesviewmodel.updateNote(note)
                 view.findNavController().popBackStack(R.id.homeFragment,false)
-                }else{
-                    Toast.makeText(context,"Title can't be empty",Toast.LENGTH_SHORT).show()
+            }else{
+                Toast.makeText(context,"Title can't be empty",Toast.LENGTH_SHORT).show()
             }
         }
     }
 
     private fun deleteNote(){
         AlertDialog.Builder(activity).apply {
-            setTitle("Delete Note")
-            setMessage("Are you sure you want to delete this note?")
+            setTitle("Delete Task")
+            setMessage("Are you sure you want to delete this Task?")
             setPositiveButton("Delete"){_,_ ->
                 notesviewmodel.deleteNote(currentNote)
-                Toast.makeText(context,"Note Deleted",Toast.LENGTH_SHORT).show()
+                Toast.makeText(context,"Task Completed",Toast.LENGTH_SHORT).show()
                 view?.findNavController()?.popBackStack(R.id.homeFragment,false)
             }
             setNegativeButton("Cancel",null)

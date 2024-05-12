@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/saveMenu"
-        android:title="Save"
+        android:icon="@drawable/diskette"
+        android:title="save"
         app:showAsAction="always" />
 </menu>

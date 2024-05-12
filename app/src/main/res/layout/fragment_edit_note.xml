@@ -39,7 +39,7 @@
             android:id="@+id/editNoteDesc"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:hint="Enter the description"
+            android:hint="Enter the description (Time...)"
             android:gravity="top"
             android:padding="12dp"
             android:textSize="18sp"
@@ -56,7 +56,7 @@
             android:clickable="true"
             android:backgroundTint="@color/pink"
             android:tintMode="@color/white"
-            android:src="@drawable/add"
+            android:src="@drawable/save"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:contentDescription="editFab" />

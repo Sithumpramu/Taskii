@@ -35,7 +35,7 @@
                 android:maxHeight="170dp"
                 android:text="Description"
                 android:textSize="14sp"
-                android:textColor="@color/pink"/>
+                android:textColor="@color/black"/>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
