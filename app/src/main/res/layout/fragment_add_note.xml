@@ -39,7 +39,7 @@
             android:id="@+id/addNoteDesc"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:hint="Enter the description (Time...)"
+            android:hint="Add Details (Time and etc)"
             android:gravity="top"
             android:padding="12dp"
             android:textSize="18sp"
